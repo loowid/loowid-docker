@@ -1,4 +1,4 @@
-loowid-docker
+Loowid Docker
 =============
 
 Docker files to build loowid docker container.
