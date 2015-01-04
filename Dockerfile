@@ -15,7 +15,8 @@ RUN apt-get update && apt-get install -y mongodb-org=2.6.1 mongodb-org-server=2.
 
 # Download and install loowid source
 RUN git clone https://github.com/loowid/loowid /opt/loowid
-RUN cd /opt/loowid;git checkout 1.0.0;npm install --production
+#RUN cd /opt/loowid;git checkout 1.0.0;npm install --production
+RUN cd /opt/loowid;npm install --production
 
 # Create the MongoDB data directory
 RUN mkdir -p /opt/loowid/data/db
